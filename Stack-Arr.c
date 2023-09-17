@@ -128,8 +128,6 @@ void print()
                     printf("Enter the Element you want to push: \n");
                     scanf("%d", &data);
                     push(data);
-
-                
             }
         }
     return 0;
