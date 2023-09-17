@@ -137,6 +137,12 @@ void print()
                     data=pop();    
                     printf("Deleted element is %d \n", data);
                     break;
+                
+                //Case 3 is used to delete the top item
+                case 3:
+                    data=stack_arr[top];
+                    printf("The top Element in the array stack is %d", data);
+                    break;
 
                 //case 4 is used to print the all element of the array
                 case 4:
