@@ -96,7 +96,9 @@ void print()
         }
         //This for loop will start from the top element and will be reduced using loop till it reaches underflow
         for(i=top; i>=0; i--)
-        printf("The arrays are - %d ", &stack_arr[i]);
+        printf("%d ", stack_arr[i]);
+        printf("\n The Memory address is: ");
+        printf("%p \n", &stack_arr[i]);
         printf("\n");
 }
 //////////////////////////////////////////////////////////////////////////
@@ -110,7 +112,7 @@ void print()
     while(1)
         { 
             //This is the Menu for user interface
-            printf("########## MENU ########## \n");
+            printf("\n\n########## MENU ########## \n");
             printf("\nStack Operations:\n");
             printf("1. Push\n");
             printf("2. Pop\n");
@@ -128,6 +130,26 @@ void print()
                     printf("Enter the Element you want to push: \n");
                     scanf("%d", &data);
                     push(data);
+                    break;
+
+                //case 2 is used to delete a top item from the array    
+                case 2:
+                    data=pop();    
+                    printf("Deleted element is %d \n", data);
+                    break;
+
+                //case 4 is used to print the all element of the array
+                case 4:
+                    print();
+                    break;
+
+                //case 5 is used to exit the operation
+                case 5:
+                    return 0;
+                
+                //This will display a message if user wrong type their choices
+                default:
+                    printf("Wrong choice \n");
             }
         }
     return 0;
