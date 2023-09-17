@@ -21,6 +21,16 @@ int main()
     {
         printf("Number %d: %d \n", i + 1, arr[i]);
     }
+    //%p stores is used to represent the memory address of the array
+     printf("First number %p\n", &arr[0]);
+     printf("Second number %p\n", &arr[1]);
+     printf("Third number %p\n", &arr[2]);
+
+    //%lu is used to represent the whole memory
+     printf("The Value of arr %lu\n", &arr);
+
+     //%lu with size of operator is used to find the total size used in memory by th array
+     printf("The Value of arr %lu\n", sizeof(arr));
 
  return 0;
 }
