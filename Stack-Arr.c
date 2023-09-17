@@ -23,7 +23,7 @@ int isFull()
 
 //The condition for under-flow function
 int isEmpty()
-{
+{ 
     if(top == -1)
         return 1;
      else 
