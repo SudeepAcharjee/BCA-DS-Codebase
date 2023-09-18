@@ -1,6 +1,7 @@
 //Creating a stack using linked list
 #include<stdio.h>
 
+
 //creating a structure
 struct node
     {
@@ -19,3 +20,5 @@ int isEmpty()
             return 0;
     }
 ///////////////////////////////////////////////////////
+
+
