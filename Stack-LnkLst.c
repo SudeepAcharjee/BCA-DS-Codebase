@@ -33,7 +33,7 @@ int isEmpty()
             {
                 printf("Stack Overflow");
                 return 0;
-            }
+            } 
         newNode -> data = data;
         newNode -> link = NULL;
 
