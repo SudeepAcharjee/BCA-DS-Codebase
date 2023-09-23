@@ -24,7 +24,22 @@ int isEmpty()
 
 
 //Creating a push function that is used to push data in the array 
- 
+ int push(int data)
+    {
+        struct node* newNode;
+        newNode = malloc(sizeof(newNode));
+
+        if(newNode == NULL)
+            {
+                printf("Stack Overflow");
+                return 0;
+            } 
+        newNode -> data = data;
+        newNode -> link = NULL;
+
+        newNode -> link = top;
+        top = newNode;
+    }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
