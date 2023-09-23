@@ -77,4 +77,47 @@ void display(struct CircularQueue* queue) {
     printf("NULL\n");
 }
 
-int main() 
+int main() {
+    struct CircularQueue* queue = createCircularQueue();
+    int choice, data;
+
+    while (1) {
+        printf("\nCircular Queue Operations:\n");
+        printf("1. Enqueue\n");
+        printf("2. Dequeue\n");
+        printf("3. Display Circular Queue\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter data to enqueue: ");
+                scanf("%d", &data);
+                enqueue(queue, data);
+                break;
+
+            case 2:
+                if (!isEmpty(queue)) {
+                    int removedElement = dequeue(queue);
+                    printf("Dequeued element: %d\n", removedElement);
+                } else {
+                    printf("Queue is empty. Cannot dequeue.\n");
+                }
+                break;
+
+            case 3:
+                display(queue);
+                break;
+
+            case 4:
+                printf("Exiting the program.\n");
+                exit(0);
+
+            default:
+                printf("Invalid choice. Please enter a valid option.\n");
+        }
+    }
+
+    return 0;
+}
