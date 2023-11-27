@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Click Event</title>
+</head>
+<body>
+
+<!-- Content of the page -->
+<h1>Click anywhere on the page</h1>
+
+<script>
+    // Function to handle the mouse click event
+    function handleMouseClick(event) {
+        alert("Mouse clicked at coordinates: X=" + event.clientX + ", Y=" + event.clientY);
+    }
+
+    // Add a click event listener to the document
+    document.addEventListener('click', handleMouseClick);
+</script>
+
+</body>
+</html>

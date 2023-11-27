@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox Alert</title>
+  
+</head>
+<body>
+
+  <label>
+    <input type="checkbox" id="myCheckbox"> Check me
+  </label>
+
+  <script>
+    // Get the checkbox element
+    var checkbox = document.getElementById('myCheckbox');
+
+    // Add a change event listener to the checkbox
+    checkbox.addEventListener('change', function() {
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // Display the contents of the checkbox in an alert box
+        alert('Checkbox is checked!');
+      } else {
+        // Display a message if the checkbox is unchecked
+        alert('Checkbox is unchecked.');
+      }
+    });
+  </script>
+
+</body>
+</html>

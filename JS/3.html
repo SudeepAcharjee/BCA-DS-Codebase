@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Bar Example</title>
+    <style>
+        #statusBar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="statusBar">Time is running out</div>
+
+<script>
+    // Function to update the status message
+    function updateStatusMessage(message) {
+        var statusBar = document.getElementById('statusBar');
+        if (statusBar) {
+            statusBar.textContent = message;
+        }
+    }
+
+    // Example: Update the status message after a delay
+    setTimeout(function() {
+        updateStatusMessage("Hurry up! Time is really running out!");
+    }, 5000); // Display the message after 5 seconds
+</script>
+
+</body>
+</html>

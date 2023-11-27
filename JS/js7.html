@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <script>
+        function displayCurrentDateTime() {
+        // Create a new Date object
+        var currentDate = new Date();
+
+        // Get individual components of the date and time
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth() + 1; // Months are zero-indexed, so add 1
+        var day = currentDate.getDate();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+
+        // Format the date and time
+        var formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+        // Display the result
+        document.write("Current Date and Time:\n" + formattedDateTime);
+    }
+
+    // Call the function when the page loads or in response to an event
+    displayCurrentDateTime();
+    </script>
+</body>
+</html>
