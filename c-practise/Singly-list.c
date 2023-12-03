@@ -108,7 +108,7 @@ int main() {
                 scanf("%d", &data);
                 insertAtBeginning(&head, data);
                 break;
-
+  
             case 2:
                 printf("Enter data to insert at the end: ");
                 scanf("%d", &data);
@@ -148,3 +148,4 @@ int main() {
 
     return 0;
 }
+ 
