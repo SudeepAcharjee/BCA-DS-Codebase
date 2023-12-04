@@ -163,7 +163,7 @@ int main() {
                 while (tail != NULL && tail->next != NULL) {
                     tail = tail->next;
                 }
-                displayBackward(tail);
+                displayBackward(tail)
                 break;
 
             case 7:
