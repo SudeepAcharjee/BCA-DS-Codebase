@@ -42,6 +42,7 @@ void enqueue(struct CircularQueue* queue, int data) {
         queue->rear = 0;
     } else {
         queue->rear = (queue->rear + 1) % MAX_SIZE;
+        --+--------`
     }
     queue->items[queue->rear] = data;
 }
