@@ -19,7 +19,7 @@ struct CircularQueue* createCircularQueue() {
     queue->front = -1;
     queue->rear = -1;
     return queue;
-} hel
+} he
 
 // Function to check if the circular queue is empty
 int isEmpty(struct CircularQueue* queue) {
