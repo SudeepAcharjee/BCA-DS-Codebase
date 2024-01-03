@@ -13,7 +13,7 @@ function showMessage() {
     if (userResponse) {
         alert("Welcome to 18+ website");
     } else {
-        alert("Go and watch POGO");
+        alert("Go Away");
     }
 }
 showMessage();
