@@ -12,13 +12,42 @@
     <!-- FunctionScript -->
     <script>
         // Function declaration
-        function greet(name) {
+        function greet(name = "Sudeep") {
           console.log(`Hello, ${name}!`);
         }
 
         // Call the function
+        greet();
         greet("John"); // Output: Hello, John!
 
         </script>
+
+        <!-- learnig own function -->
+        <script>
+          function roll(roll1){
+            console.log(`Hello, ${roll1}!`)
+          
+           }
+
+          roll('1');
+        </script>
+
+        <!-- add function -->
+        <script>
+          function add( a, b){
+          return (a+b);
+          }
+         const result = add(3,4);
+          console.log(result);
+        </script>
+
+
+         <!-- writting a arrow function -->
+         <script>
+          const product = (x, y) => x * y;
+
+          const multiply = product(5,10);
+          console.log(multiply);
+         </script>
 </body>
 </html>
