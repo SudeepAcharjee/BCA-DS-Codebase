@@ -114,8 +114,9 @@ int main() {
         printf("1. Insert at the beginning\n");
         printf("2. Insert at the end\n");
         printf("3. Delete a node\n");
-        printf("4. Search for a node\n");
-        printf("5. Display the linked list (forward)\n");
+        printf("4. Search for 
+    newNode->prev = NULL;
+    newNode->next = NULL;st (forward)\n");
         printf("6. Display the linked list (backward)\n");
         printf("7. Exit\n");
         printf("Enter your choice: ");
