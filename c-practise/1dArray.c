@@ -31,6 +31,5 @@ int main()
 
      //%lu with size of operator is used to find the total size used in memory by th array
      printf("The Value of arr %lu\n", sizeof(arr));
-
  return 0;
 } 
