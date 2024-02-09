@@ -25,7 +25,7 @@ int main()
      printf("First number %p\n", &arr[0]);
      printf("Second number %p\n", &arr[1]);
      printf("Third number %p\n", &arr[2]);
-//crea
+//cre
     //%lu is used to represent the whole memory
      printf("The Value of arr %lu\n", &arr);
 
