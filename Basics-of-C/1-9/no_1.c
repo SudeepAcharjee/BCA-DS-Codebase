@@ -1,5 +1,5 @@
 #include<stdio.h>
-//mai
+//m
 int main()
 {
 	int choise;
